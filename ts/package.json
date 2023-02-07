@@ -1,6 +1,10 @@
 {
   "name": "@coral-xyz/monorepo",
   "private": true,
+  "scripts": {
+    "prepare": "yarn build",
+    "build": "bash build-packages.sh"
+  },
   "workspaces": [
     "packages/*",
     "tests"

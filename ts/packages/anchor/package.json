@@ -22,6 +22,7 @@
     "node": ">=11"
   },
   "scripts": {
+    "prepare": "yarn build",
     "build": "rimraf dist/ && yarn build:node && yarn build:browser",
     "build:node": "cd ../borsh && yarn build && cd ../anchor && tsc && tsc -p tsconfig.cjs.json",
     "build:browser": "rollup --config",
